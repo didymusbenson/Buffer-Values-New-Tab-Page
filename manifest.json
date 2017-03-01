@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
-  "name": "Buffer Values New Tab Page",
+  "name": "Leadership Pattern Values New Tab Page",
   "version": "1.0.0",
-  "description": "The wonderful Buffer Values replace your New Tab Page!",
+  "description": "The wonderful Leadership Pattern Values replace your New Tab Page!",
   "chrome_url_overrides" : {
-    "newtab": "buffer-values.html"
+    "newtab": "lp-values.html"
   },
   "icons": {
     "128": "graphics/icons/icon-128x128.png",
