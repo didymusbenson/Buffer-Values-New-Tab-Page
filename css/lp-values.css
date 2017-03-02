@@ -110,7 +110,7 @@ body.mode-pictures::before {
   to   { opacity: 0.3; }
 }
 
-@keyframes fade-in-cattime {
+@keyframes fade-in-puppytime {
   from { opacity: 0; }
   to   { opacity: 0.8; }
 }
@@ -120,8 +120,8 @@ body.mode-pictures.background-is-loaded::before {
   opacity: 0.3;
 }
 
-body.mode-pictures.background-is-loaded.is-cattime::before {
-  animation: fade-in-cattime 1s;
+body.mode-pictures.background-is-loaded.is-puppytime::before {
+  animation: fade-in-puppytime 1s;
   opacity: 0.8;
 }
 
@@ -136,7 +136,6 @@ body.mode-pictures.background-is-loaded.is-cattime::before {
 }
 
 /* Colors Mode */
-
 body.mode-colors.color-1 {
   background-color: rgba(248, 194, 17, 0.15);
 }
@@ -240,7 +239,7 @@ body.mode-colors.color-10 {
   opacity: 1;
 }
 
-.is-cattime #mode-selector {
+.is-puppytime #mode-selector {
   display: none;
 }
 

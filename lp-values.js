@@ -34,17 +34,17 @@
     //  });
     //});
     //    console.log(backgroundImages);
-    var itscattimeImages = [
-    '../graphics/itscattime/cat-1.jpg',
-    '../graphics/itscattime/cat-2.jpg'
+    var itspuppytimeImages = [
+    '../graphics/itspuppytime/puppy-1.jpg',
+    '../graphics/itspuppytime/puppy-2.jpg'
   ];
 
     init();
 
     function init() {
         var values = document.querySelectorAll('.value');
-        var isItCatTime = wouldItBeCatTime();
-        var displayMode = isItCatTime ? displayModes[0] : (localStorage.getItem('mode') || displayModes[0]);
+        var isItpuppytime = wouldItBepuppytime();
+        var displayMode = isItpuppytime ? displayModes[0] : (localStorage.getItem('mode') || displayModes[0]);
         var randValueIndex;
         var randValue;
 
@@ -56,9 +56,9 @@
 
 
 
-        if (isItCatTime) {
-            displayPictures('itscattime', randValueIndex);
-            document.body.classList.add('is-cattime');
+        if (isItpuppytime) {
+            displayPictures('itspuppytime', randValueIndex);
+            document.body.classList.add('is-puppytime');
         } else {
             displayMode == 'pictures' ? displayPictures('backgrounds', randValueIndex) : displayColors(randValueIndex);
         }
@@ -128,9 +128,9 @@
                     return this.arr[randValueIndex][randBackgroundIndex]
                 }
             },
-            itscattime: {
-                range: itscattimeImages.length,
-                arr: itscattimeImages,
+            itspuppytime: {
+                range: itspuppytimeImages.length,
+                arr: itspuppytimeImages,
                 getSrc: function (randValueIndex, randBackgroundIndex) {
                     return this.arr[randBackgroundIndex]
                 }
@@ -141,7 +141,7 @@
     }
 
     // Well, yes
-    function wouldItBeCatTime() {
+    function wouldItBepuppytime() {
         return getRandom(500) == 0;
     }
 
